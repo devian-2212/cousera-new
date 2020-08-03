@@ -10,12 +10,7 @@
 				position: relative;
 				padding: 5px;
 			}
-			/*span {
-			background-color: #808080;
-			border-top:1px;
-			border-right: 1px;
-			border-left: 1px;*/
-		}
+
 		h1 {
 			font-size: 175%;
 			text-align: center;
@@ -27,7 +22,6 @@
 			font-size: 125%;
 			border: 1px solid;
 			margin:2px;
-			margin-bottom: 20px;
 			float: right;
 
 		
