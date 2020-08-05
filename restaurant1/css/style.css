@@ -1,0 +1,219 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+.navbar-brand{
+	padding-top: 30px;
+}
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px 1px #222;
+	margin-top:0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+/*this is to remove underline from the link*/
+
+.navbar-brand a:hover , .navbar a:focus , #collapsable-nav a:hover , #collapsable-nav a:focus, #new-try a:hover, #new-try a:focus {
+	text-decoration: none;
+} 
+.navbar-brand p{
+			color: #000;
+			text-transform: uppercase;
+			font-size: .7em;
+			margin-top:12px;
+}
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border:0;
+	height: 130px;
+}
+#logo-img {
+	background: url('../images/restaurant-logo_medium.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 10px 15px 10px 0px;
+
+
+}
+
+#nav-list{
+	text-align: right;
+	padding-right: 15px;
+}
+#nav-list a{
+	color:#f6b319;
+}
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+#nav-lst a span {
+	font-size: 1.8em;
+}
+#phone {
+	margin-top: 5px;
+}
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+
+}
+#phone div{
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+
+}
+ 
+
+#new-try div.text-try {
+	padding-right: 15px;
+	color:  #61122f;
+}
+/* Footer*/
+.card-footer {
+	margin-top: 30px;
+	padding-bottom: 30px
+	padding-top 35px;
+	background-color: #222;
+	border-top:0;
+
+}
+.card-footer div.row {
+	margin-bottom: 35px;
+
+}
+#hours, #address{
+	line-height: 2;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+#reviews {
+	font-style: italic;
+
+}
+#reviews p:nth-child(2) {
+	margin-top: 25px;
+}
+.card-footer hr{
+	background-color: #fff ;
+}
+/*End Footer*/
+
+/* HOME PAGE */
+
+#menu-tile, #specials-tile, #map-tile {
+	height:250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow:hidden;
+}
+#menu-tile:hover , #specials-tile:hover , #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+	background: url('../images/menu-tile.jpg') no-repeat;
+	background-position: center;
+}
+#specials-tile {
+	background: url('../images/specials-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.8;
+}
+/* END HOME PAGE */
+
+/*********** Large devices only *********/
+@media (min-width: 1200px){
+		.jumbotron {
+			background: url('../images/jumbotron_1200.jpg') no-repeat;
+			height: 675px;
+			box-shadow: 0 0 50px #3F0C1F;
+			border: 2px solid #3F0C1F;
+			margin-top: 30px;
+		
+		}
+}
+/******medium devices only**********/
+@media (min-width: 992px) and (max-width: 1199px) {
+			.jumbotron {
+				background: url('../images/jumbotron_992.jpg') no-repeat;
+				height: 558px;
+				box-shadow: 0 0 50px #3F0C1F;
+				border: 2px solid #3F0C1F;
+				margin-top: 30px;
+				
+		}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.jumbotron {
+			background: url('../images/jumbotron_768.jpg') no-repeat;
+			height: 432px;
+			box-shadow: 0 0 50px #3F0C1F;
+			border: 2px solid #3F0C1F;
+			margin-top: 30px;
+			
+		}
+}
+
+@media (max-width: 767px){
+	.jumbotron {
+			margin-top: 30px;
+			padding: 0;
+			box-shadow: 0 0 50px #3F0C1F;
+			border: 2px solid #3F0C1F;
+		}
+}
+@media (min-width: 461px) and (max-width: 575px){
+	#main-heading {
+		font-size: .75em;
+	}
+}
+@media (max-width: 460px) {
+	#main-heading {
+		font-size: .5em;
+	}
+}
+@media (max-width: 575px){
+	#menu-tile, #specials-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+	.card-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.card-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+	.card-footer section hr{
+		width: 50%;
+	}
+
+}
