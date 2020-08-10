@@ -1,0 +1,11 @@
+#main-content> div {
+	font-size: 16px;
+	color: #000;
+	background-color: #ADD8E6;
+	font-family: 'Oxygen', sans-serif;
+	margin: 20px auto 20px;
+}
+#list{
+	text-align: center;
+	font-size: 1.4em;
+}
