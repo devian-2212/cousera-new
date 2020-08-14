@@ -21,3 +21,19 @@ document.addEventListener("DOMContentLoaded",
       });
   }
 );
+(function (global){
+ 
+  var homeHtml = "home.html";
+  var home = {};
+  var insertHtml = function(selector,html){
+    var targetElem = document.querySelector(selector);
+    targetElem.innerHTML = html;
+  };
+
+  document.addEventListener("DOMContentLoaded",function (event){
+    $ajaxUtils.sendGetRequest(homeHtml,function(responseText){
+      document.querySelector("#main-content").innerHTML = responseText;
+    })
+  },false);
+  global.$home = home;
+})(window);

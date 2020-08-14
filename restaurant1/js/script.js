@@ -8,7 +8,7 @@
 	})();
 
 (function (global) {
-	var dc ={};
+	var dc = {};
 	var homeHtml = "home-snippet.html";
 
 	var insertHtml = function (selector,html) {
@@ -16,10 +16,9 @@
 		targetElem.innerHtml = html;
 
 	};
-
-	var showLoading = function(selector) {
+var showLoading = function(selector) {
 		var html="<div class='text-center'>";
-		html+="img src='ajax-loader.gif'></div>";
+		html+="<img src='ajax-loader.gif'></div>";
 		insertHtml(selector, html);
 	};
 	document.addEventListener("DOMContentLoaded",function(event){
@@ -28,6 +27,5 @@
 			document.querySelector("#main-content").innerHtml = responseText;
 		},
 		false);
-
 	global.$dc = dc;
 })(window);
