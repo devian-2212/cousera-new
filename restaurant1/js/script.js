@@ -24,7 +24,8 @@ var showLoading = function(selector) {
 	document.addEventListener("DOMContentLoaded",function(event){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(homeHtml,function(responseText){
-			document.querySelector("#main-content").innerHtml = responseText;
+			console.log(responseText);
+			document.querySelector("#main-content").innerHtml = responseText.responseText;
 		},
 		false);
 	global.$dc = dc;
